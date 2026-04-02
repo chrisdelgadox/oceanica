@@ -2,39 +2,28 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Consulta de Documentos | Oceánica de Seguros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Documentos | Oceánica de Seguros</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 </head>
 <body>
 
     <header class="main-header">
         <div class="header-container">
-            <img src="logo_oceanica.png" alt="Oceánica" style="height: 40px; width: auto;">
-            <div class="header-right">
-                <span class="tagline">CONSULTA DIGITAL</span>
-            </div>
+            <img src="logo_oceanica.png" alt="Oceánica de Seguros" class="logo-centrado">
         </div>
         <div class="accent-bar"></div>
     </header>
 
     <main class="viewer-container">
-        <div class="document-info">
-            <p>ID: <span class="uuid">d5d52086...a67f4</span></p>
-            <p>ESTADO: <span class="status-valid">VERIFICADO</span></p>
-        </div>
-        
-        <div id="pdf-viewer-container" class="pdf-viewer-scroll">
-            <div id="pdf-canvas-wrapper">
-                </div>
-        </div>
+        <embed 
+            src="d5d52086-eef3-4d88-936a-400c629a67f4.pdf#toolbar=1&navpanes=0&scrollbar=1" 
+            type="application/pdf" 
+            width="100%" 
+            height="100%" 
+            class="pdf-embed"
+        />
     </main>
 
-    <footer class="footer">
-        <p>&copy; 2026 Oceánica de Seguros S.A. - Control de Gestión</p>
-    </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
